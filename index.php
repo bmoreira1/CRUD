@@ -36,25 +36,10 @@
             <div class="col mt-5">
                 <?php 
                     include('./config/conexao.php');
-                    switch(@$_REQUEST["page"]){
-                        case "novo":
-                            include("./pages/cadastro.php");
-                        break;
-                        case "listar":
-                            include("./pages/listar.php");
-                        break;
-                        case "editar":
-                            include('./pages/editar.php');
-                        break;
-                        case "salvar":
-                            include('./config/backEnd.php');
-                        default:
-                    }
+                    include('./config/routes.php');                    
                 ?>
             </div>
-
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -4,7 +4,7 @@
         case 'cadastrar':
             $nome = $_POST['nome'];
             $email = $_POST['email'];
-            $senha = $_POST['senha'];
+            $senha = md5($_POST['senha']);
             $dataNasc = $_POST['dataNasc'];
             
             $sql = "INSERT INTO usuarios (
