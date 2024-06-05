@@ -1,0 +1,20 @@
+.tabela{
+    background-color: #f5f5f5;
+
+    border: 1px solid red;
+}
+
+.cabecalho {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.tabela{
+    background-color: #f1f6f9e0;
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+
+}
