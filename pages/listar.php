@@ -28,11 +28,11 @@
             <td class="tabela"><?php echo $row->dataNasc?></td>
             <td class="tabela">
             
-                <button onclick="confirmEditar(<?php echo $row->id; ?>)">
+                <button class="btn btn-success btn-sm" onclick="confirmEditar(<?php echo $row->id; ?>)">
                     EDITAR
                 </button>
                 
-                <button onclick="confirmDelete(<?php echo $row->id; ?>)">
+                <button class="btn btn-danger btn-sm" onclick="confirmDelete(<?php echo $row->id; ?>)">
                     DELETE
                 </button>
             </td>
