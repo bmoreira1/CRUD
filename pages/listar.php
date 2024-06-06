@@ -9,29 +9,32 @@
 
 <h1>Listar Usuario</h1>
 
-<div>
-    <div class=" mt-5">
+<div class="container">
+    <div class="mt-5">
         <h2 class="text-center">dados do formulário:</h2>
     </div>
     <div class="d-flex justify-content-center">
-        <table class="tabela">
+        <table class="table table-hover table-striped table-bordered">
             <tr>
-                <th class="cabecalho">NOME</th>
-                <th class="cabecalho">E-MAIL</th>
-                <th class="cabecalho">SENHA</th>
-                <th class="cabecalho">DATA DE NASCIMENTO</th>
+                <th>#ID</th>
+                <th class="text-center">NOME</th>
+                <th class="text-center">E-MAIL</th>
+                <th class="text-center">SENHA</th>
+                <th class="text-center">DATA DE NASCIMENTO</th>
+                <th class="text-center">AÇÕES</th>
             </tr>
             <?php if ($qtd > 0) { ?>
                 <?php while ($row = $res->fetch_object()) { ?>
             <tr>
-                <td class="tabela"><?php echo $row->nome ?></td>
-                <td class="tabela"><?php echo $row->email?></td>
-                <td class="tabela"><?php echo md5($row->senha);?></td>
-                <td class="tabela"><?php echo date_format(date_create_from_format('Y-m-d', $row->dataNasc), 'd/m/Y');?></td>
+                <td class="text-center"><?php echo $row->id ?></td>
+                <td><?php echo $row->nome ?></td>
+                <td><?php echo $row->email?></td>
+                <td><?php echo md5($row->senha);?></td>
+                <td class="text-center"><?php echo date_format(date_create_from_format('Y-m-d', $row->dataNasc), 'd/m/Y');?></td>
 
-                <td class="tabela">
+                <td class="text-center">
                 
-                    <button class="btn btn-success btn-sm" onclick="confirmEditar(<?php echo $row->id; ?>)">
+                    <button class="btn btn-success btn-sm m-1" onclick="confirmEditar(<?php echo $row->id; ?>)">
                         EDITAR
                     </button>
                     

@@ -1,6 +1,6 @@
 <?php 
     switch(@$_REQUEST["page"]){
-        case "novo":
+        case "cadastro":
             include("./pages/cadastro.php");
         break;
         case "listar":

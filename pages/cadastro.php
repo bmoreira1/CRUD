@@ -1,7 +1,7 @@
 <h1>Novo Usuario</h1>
 
 <form action="?page=salvar" method="POST">
-    <input type="hidden" name="acao" value="cadastrar">
+    <input type="hidden" name="acao" value="cadastro">
     <div class="mb-3">
         <label for="nome">Nome</label>
         <input type="text" class="form-control" name="nome">
