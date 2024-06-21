@@ -4,7 +4,16 @@
     <input type="hidden" name="acao" value="cadastro">
     <div class="mb-3">
         <label for="nome">Nome</label>
-        <input type="text" class="form-control" name="nome">
+        <input type="text" class="form-control" name="nick">
+    </div>
+    <div class="mb-3">
+        <label for="categoria">Categoria</label>
+        <select class="form-control" name="categoria" id="">
+            <option value="">- Selecione -</option>
+            <option value="basico">Bascio</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="premium">Premium</option>
+        </select>
     </div>
     <div class="mb-3">
         <label for="email">E-mail</label>

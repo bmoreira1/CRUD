@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a class="nav-link" href="?page=cadastro">Cadastro</a>
+                        <a class="nav-link text-primary" href="?page=cadastro">Cadastro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=listar">Lista Cadastrados</a>
@@ -29,7 +29,6 @@
         <div class="row mt-5">
             <div class="col mt-5">
                 <?php 
-                    include('./config/conexao.php');
                     include('./config/routes.php');                    
                 ?>
             </div>

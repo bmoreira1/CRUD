@@ -1,4 +1,6 @@
 <?php 
+    require('./config/conexao.php');
+
     switch(@$_REQUEST["page"]){
         case "cadastro":
             include("./pages/cadastro.php");
